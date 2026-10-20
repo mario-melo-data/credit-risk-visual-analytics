@@ -8,7 +8,7 @@ This project investigates how credit utilisation, repayment behaviour, and clien
 
 ## Data
 
-* **Source:** Default of Credit Card Clients (UCI / Kaggle)
+* **Source:** [Default of Credit Card Clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients) (UCI, 30,000 clients; also mirrored on Kaggle)
 * **Content:** anonymised credit-card client records with credit limits, monthly billing and payment amounts, repayment-delay status (PAY_0 to PAY_6), demographic attributes, and the observed next-month default outcome
 * **Target:** `default.payment.next.month`
 
@@ -37,6 +37,7 @@ The analysis follows a visual-analytics workflow, where each visualisation infor
 ## Limitations
 
 * Figures 1 to 5 were produced on the full dataset before the 70/30 split, and they informed the choice of model features. The test set is therefore not fully independent of those exploratory choices, and the model results are exploratory rather than an unbiased estimate of out-of-sample performance.
+* The logistic regression is a demonstration model for the visual analysis: it uses unscaled features, treats EDUCATION (a nominal code) as a number, and no discrimination metric such as ROC-AUC is reported.
 
 ## Tech stack
 
