@@ -24,7 +24,7 @@ The analysis follows a visual-analytics workflow, where each visualisation infor
 4. **Demographic heterogeneity.** A heatmap of default rate by age band and education level reveals interaction effects, motivating ordered demographic features.
 5. **Transformation evaluation.** Box plots compare raw billing against the engineered utilisation and aggregated repayment-stress features, confirming the transformed features separate defaulters more clearly.
 6. **Latent structure.** A PCA embedding shows that defaulters and non-defaulters overlap rather than forming clean clusters, indicating that default risk is continuous and probabilistic.
-7. **Calibration.** Predicted probabilities are compared with realised default rates across risk deciles, showing where the model is reliable and where it diverges.
+7. **Calibration check.** Predicted probabilities are compared with realised default rates across risk deciles, showing where the model is reliable and where it diverges.
 8. **Threshold sensitivity.** The share of clients flagged as high-risk is plotted across decision thresholds, showing that classification is a policy-sensitive choice rather than a fixed boundary.
 9. **Risk stratification.** Clients are grouped into low, medium, and high behavioural-risk bands, with default rates increasing monotonically across the bands.
 
